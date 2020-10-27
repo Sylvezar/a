@@ -5,7 +5,7 @@ librarylist.gui = "https://raw.githubusercontent.com/Sylvezar/a/main/libraries/g
 librarylist.httpget = "https://raw.githubusercontent.com/Sylvezar/a/main/libraries/httpget.lua"
 
 
-
+print("debug")
 local libraries = {}
 local function httpget(url)
 return game:HttpGet(url,true)
