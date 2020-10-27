@@ -14,8 +14,8 @@ local function include(libraryname,library)
 libraries[libraryname] = library
 end
 for libraryname,library in pairs(librarylist) do
+	print(libraryname,library)
 	include(libraryname,loadstring(httpget(library))())
 end
-print("Loaded "..#libraries)
 _G.libraries = libraries
 return libraries
