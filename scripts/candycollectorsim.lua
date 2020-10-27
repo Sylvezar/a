@@ -74,9 +74,9 @@ for a,b in pairs(settings) do
 		end
 	end
 	buttontext(b)
-	button:MouseButton1Click:connect(function()
-	settings[a] = not settings[a]
-	buttontext(settings[a])
+	button:MouseButton1Click:Connect(function(...)
+		settings[a] = not settings[a]
+		buttontext(settings[a])
 	end)
 end
 local list = buttonframe:GetChildren()
